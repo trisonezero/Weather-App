@@ -4,6 +4,12 @@ const searchBtn = document.getElementById("searchBtn").addEventListener('click',
     getLoc(document.getElementById('loc').value);
 })
 
+const searchBtnEnter = document.getElementById("loc").addEventListener('keypress', function(event){
+    if (event.key === 'Enter'){
+        document.getElementById("searchBtn").click();
+    }
+})
+
 
 function getLoc(loc) {
     const geoFetch = `http://api.openweathermap.org/geo/1.0/direct?q=${loc}&limit=1&appid=${openWeatherApiKey}`
