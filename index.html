@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en-US">
   <head>
@@ -8,17 +8,30 @@
     <link rel="stylesheet" href="styles.css" />
 
     <title>Check Weather</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
       <div class="locInput">
-        <input type="text" id="loc" size="25" height="25" placeholder="Enter City...">
+        <input
+          type="text"
+          id="loc"
+          size="25"
+          height="25"
+          placeholder="Enter City..."
+        />
         <button type="button" id="searchBtn">Search</button>
       </div>
       <div class="WeatherCont">
-      <p id="basicWeather"></p>
-      <img src="" id="descIco">
-    </div>
+        <p id="basicWeather"></p>
+        <img src="" id="descIco" />
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
