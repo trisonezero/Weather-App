@@ -40,8 +40,14 @@ function getLoc(loc) {
             weatherType = weaData["weather"][0].main;
           }
           document.body.style.backgroundImage = `url('pictures/${weatherType}.jpg')`;
+          document.getElementById("basicWeather").style.color = "white";
+
         });
     })
-
-    .catch((err) => alert("Invalid City"));
+    .catch(
+      (err) => (
+        (document.getElementById("basicWeather").innerText = "Invalid City"),
+        (document.getElementById("basicWeather").style.color = "red")
+      )
+    );
 }

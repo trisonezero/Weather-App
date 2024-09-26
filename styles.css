@@ -19,6 +19,8 @@ body {
   border-radius: 60px;
   margin-top: 100px;
   text-transform: capitalize;
+  width: 60%;
+  
 }
 
 .locInput {
@@ -26,21 +28,22 @@ body {
   border-radius: 50px;
   display: flex;
   align-items: center;
-  border-color: rgb(0 0 0 / 0.01);
+  }
+
+.locInput :focus{
+  outline: none
 }
 
 #loc {
   border: none;
-  /* background-color: rgb(0 0 0 / .2); */
   background-color: transparent;
-  border-radius: 50px;
   font-size: 30px;
   height: 50px;
   color: rgb(255, 255, 255);
   display: inline;
   width: 49%;
   outline-width: 0;
-  margin-left: 40px;
+  margin-left: 50px;
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
   font-weight: 450;
