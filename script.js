@@ -1,4 +1,4 @@
-openWeatherApiKey = "1e2cb3c6f90875e3709b54ae9422e33b";
+openWeatherApiKey = "apikey";
 
 const searchBtn = document
   .getElementById("searchBtn")
